@@ -69,17 +69,17 @@ const Contact = () => {
       icon: Building2,
       title: "Dubai Headquarters",
       details: [
-        "SAFAFA IMPEX LIMITED",
-        "Business Bay, Dubai, UAE",
-        "P.O. Box: XXXXX"
+        "SAFAFA IMPEX LTD",
+        "C1, Building, Ground Floor, Office No. 5",
+        "Gate No. 1, Ajman Free Zone, UAE"
       ]
     },
     {
       icon: Phone,
       title: "Phone & WhatsApp",
       details: [
-        "+971-4-XXX-XXXX",
-        "+971-50-XXX-XXXX (WhatsApp)",
+        "+971 50 110 7878",
+        "+971 50 110 7878 (WhatsApp)",
         "Available 24/7 for urgent inquiries"
       ]
     },
@@ -87,7 +87,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Communication",
       details: [
-        "info@safafaimpex.com",
+        "SAFAFAIMPEX.DU@GMAIL.COM",
         "sales@safafaimpex.com",
         "technical@safafaimpex.com"
       ]
@@ -152,14 +152,14 @@ const Contact = () => {
                     <Button 
                       variant="corporate" 
                       className="w-full bg-white text-primary hover:bg-white/90"
-                      onClick={() => window.open('https://wa.me/971XXXXXXXX', '_blank')}
+                      onClick={() => window.open('https://wa.me/971501107878', '_blank')}
                     >
                       WhatsApp Chat
                     </Button>
                     <Button 
                       variant="corporate-outline" 
                       className="w-full border-white text-white hover:bg-white hover:text-primary"
-                      onClick={() => window.location.href = 'tel:+971XXXXXXXX'}
+                      onClick={() => window.location.href = 'tel:+971501107878'}
                     >
                       Call Now
                     </Button>
@@ -324,7 +324,7 @@ const Contact = () => {
                 <div className="text-center text-muted-foreground">
                   <MapPin className="w-12 h-12 mx-auto mb-2" />
                   <p>Interactive Google Maps integration would be embedded here</p>
-                  <p className="text-sm">Business Bay, Dubai, UAE</p>
+                  <p className="text-sm">Ajman Free Zone, UAE</p>
                 </div>
               </div>
             </CardContent>

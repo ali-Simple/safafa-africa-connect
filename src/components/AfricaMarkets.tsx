@@ -58,24 +58,24 @@ const AfricaMarkets = () => {
 
   const testimonials = [
     {
-      company: "Lagos Corrugated Industries",
-      country: "Nigeria",
+      company: "Packpro Industries",
+      country: "Angola - Lobito",
       quote: "SAFAFA IMPEX has been our trusted partner for premium kraftliner supply. Their consistency in quality and delivery has enabled our 40% growth over the past 3 years.",
-      executive: "Adebayo Ogundimu",
+      executive: "Carlos Silva",
       position: "Managing Director"
     },
     {
-      company: "Accra Packaging Solutions",
-      country: "Ghana", 
+      company: "FSF Global",
+      country: "Angola - Luanda", 
       quote: "The technical support and customized chemical formulations from SAFAFA have revolutionized our production efficiency. Truly a world-class supplier.",
-      executive: "Kwame Asante",
+      executive: "Ana Ferreira",
       position: "Production Manager"
     },
     {
-      company: "Luanda Box Manufacturing",
-      country: "Angola",
+      company: "West African Corrugated",
+      country: "Ghana",
       quote: "In a challenging market, SAFAFA's reliability stands out. They understand African logistics and deliver when others cannot.",
-      executive: "Maria Santos",
+      executive: "Kwame Asante",
       position: "CEO"
     }
   ];

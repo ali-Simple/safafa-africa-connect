@@ -91,22 +91,30 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12">Our Journey</h3>
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20" />
+            {/* Timeline line with gradient */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary via-secondary to-primary/20" />
             
             {milestones.map((milestone, index) => (
-              <div key={milestone.year} className={`relative flex items-center mb-12 ${
-                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-              }`}>
-                {/* Timeline dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
+              <div 
+                key={milestone.year} 
+                className={`relative flex items-center mb-12 animate-fade-in ${
+                  index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                }`}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                {/* Timeline dot with pulse animation */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10 animate-pulse shadow-lg shadow-primary/30" />
                 
-                {/* Content card */}
+                {/* Content card with enhanced animations */}
                 <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <Card className="card-elegant">
-                    <CardContent className="p-6">
-                      <div className="text-primary font-bold text-lg mb-2">{milestone.year}</div>
-                      <h4 className="text-xl font-semibold mb-2">{milestone.title}</h4>
+                  <Card className="card-elegant hover-scale group">
+                    <CardContent className="p-6 transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-secondary/5">
+                      <div className="text-primary font-bold text-2xl mb-2 transition-all duration-300 group-hover:scale-110">
+                        {milestone.year}
+                      </div>
+                      <h4 className="text-xl font-semibold mb-2 transition-colors duration-300 group-hover:text-primary">
+                        {milestone.title}
+                      </h4>
                       <p className="text-muted-foreground">{milestone.description}</p>
                     </CardContent>
                   </Card>
@@ -128,7 +136,12 @@ const About = () => {
                 Join hundreds of corrugation manufacturers who trust SAFAFA IMPEX 
                 for their premium material needs across Africa.
               </p>
-              <Button variant="corporate" size="xl" className="bg-white text-primary hover:bg-white/90">
+              <Button 
+                variant="corporate" 
+                size="xl" 
+                className="bg-white text-primary hover:bg-white/90"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Start Partnership
               </Button>
             </CardContent>

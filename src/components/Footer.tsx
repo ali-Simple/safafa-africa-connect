@@ -122,19 +122,19 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">
-                    Business Bay, Dubai, UAE
+                    Ajman Free Zone, UAE
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">
-                    +971-4-XXX-XXXX
+                    +971 50 110 7878
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">
-                    info@safafaimpex.com
+                    SAFAFAIMPEX.DU@GMAIL.COM
                   </span>
                 </div>
               </div>

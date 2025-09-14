@@ -131,17 +131,13 @@ const Products = () => {
                     </ul>
                   </div>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-center">
                     <div className="flex items-center space-x-2">
                       <Recycle className="w-4 h-4 text-secondary" />
                       <span className="text-sm font-medium text-secondary">
                         {product.sustainability}
                       </span>
                     </div>
-                    <Button variant="ghost" size="sm" className="group-hover:text-primary">
-                      Learn More
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -192,11 +188,6 @@ const Products = () => {
                       </ul>
                     </div>
                   </div>
-                  
-                  <Button variant="ghost" size="sm" className="group-hover:text-primary w-full">
-                    Request Technical Data
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </Button>
                 </CardContent>
               </Card>
             ))}
