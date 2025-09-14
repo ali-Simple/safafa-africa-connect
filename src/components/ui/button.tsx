@@ -15,11 +15,17 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Corporate SAFAFA IMPEX variants
+        corporate: "hero-gradient text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5",
+        "corporate-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all duration-300",
+        sustainability: "bg-secondary text-secondary-foreground hover:bg-secondary-light font-semibold shadow-md hover:shadow-lg transition-all duration-300",
+        premium: "bg-gradient-to-r from-primary via-primary-light to-secondary text-white font-bold shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-12 text-base",
         icon: "h-10 w-10",
       },
     },
