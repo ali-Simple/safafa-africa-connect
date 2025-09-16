@@ -61,15 +61,15 @@ const AfricaMarkets = () => {
       company: "Packpro Industries",
       country: "Angola - Lobito",
       quote: "SAFAFA IMPEX has been our trusted partner for premium kraftliner supply. Their consistency in quality and delivery has enabled our 40% growth over the past 3 years.",
-      executive: "Carlos Silva",
-      position: "Managing Director"
+      executive: "Alim Devjani",
+      position: "Procurement"
     },
     {
       company: "FSF Global",
       country: "Angola - Luanda", 
       quote: "The technical support and customized chemical formulations from SAFAFA have revolutionized our production efficiency. Truly a world-class supplier.",
-      executive: "Ana Ferreira",
-      position: "Production Manager"
+      executive: "Fatema Bhojani",
+      position: "Procurement Head"
     },
     {
       company: "West African Corrugated",

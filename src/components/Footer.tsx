@@ -69,32 +69,6 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-background to-muted border-t border-border">
       <div className="container mx-auto px-4">
-        {/* Newsletter Section */}
-        <div className="py-12 border-b border-border">
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Stay Updated with Industry Insights
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Get the latest news on paper markets, African corrugation industry trends, 
-              and exclusive offers from SAFAFA IMPEX.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input 
-                placeholder="Enter your email address"
-                type="email"
-                className="flex-1"
-              />
-              <Button variant="corporate">
-                Subscribe
-                <Send className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              No spam, unsubscribe anytime. Privacy policy applies.
-            </p>
-          </div>
-        </div>
 
         {/* Main Footer Content */}
         <div className="py-12">
@@ -177,30 +151,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Certifications & Standards */}
-        <div className="py-8 border-t border-border">
-          <div className="text-center mb-6">
-            <h4 className="font-semibold mb-4">Quality & Sustainability Standards</h4>
-            <div className="flex flex-wrap justify-center gap-6">
-              <div className="flex items-center space-x-2">
-                <Shield className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">FSC Certified</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Recycle className="w-5 h-5 text-secondary" />
-                <span className="text-sm text-muted-foreground">PEFC Chain of Custody</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FileText className="w-5 h-5 text-primary" />
-                <span className="text-sm text-muted-foreground">ISO 9001:2015</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Building2 className="w-5 h-5 text-secondary" />
-                <span className="text-sm text-muted-foreground">Dubai Chamber Member</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <Separator />
 
