@@ -104,7 +104,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-background to-accent/30">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/40">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -141,31 +141,6 @@ const Contact = () => {
                 </Card>
               ))}
 
-              {/* Quick Actions */}
-              <Card className="card-elegant hero-gradient text-white">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg mb-4 flex items-center">
-                    <MessageSquare className="w-5 h-5 mr-2" />
-                    Quick Connect
-                  </h3>
-                  <div className="space-y-3">
-                    <Button 
-                      variant="corporate" 
-                      className="w-full bg-white text-primary hover:bg-white/90"
-                      onClick={() => window.open('https://wa.me/971501107878', '_blank')}
-                    >
-                      WhatsApp Chat
-                    </Button>
-                    <Button 
-                      variant="corporate-outline" 
-                      className="w-full border-white text-white hover:bg-white hover:text-primary"
-                      onClick={() => window.location.href = 'tel:+971501107878'}
-                    >
-                      Call Now
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
 
@@ -308,28 +283,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Map Section */}
-        <div className="mt-16">
-          <Card className="card-elegant overflow-hidden">
-            <CardContent className="p-0">
-              <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 text-center">
-                <Globe className="w-12 h-12 mx-auto mb-4 text-primary" />
-                <h3 className="text-2xl font-bold mb-2">Visit Our Dubai Office</h3>
-                <p className="text-muted-foreground">
-                  Located in the heart of Dubai's business district, easily accessible 
-                  for meetings and site visits. Schedule an appointment today.
-                </p>
-              </div>
-              <div className="h-64 bg-muted flex items-center justify-center">
-                <div className="text-center text-muted-foreground">
-                  <MapPin className="w-12 h-12 mx-auto mb-2" />
-                  <p>Interactive Google Maps integration would be embedded here</p>
-                  <p className="text-sm">Ajman Free Zone, UAE</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
