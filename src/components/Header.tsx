@@ -23,11 +23,11 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>+971-4-XXX-XXXX</span>
+              <span>+971 50 110 7878</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>info@safafaimpex.com</span>
+              <span>SAFAFAIMPEX.DU@GMAIL.COM</span>
             </div>
           </div>
         </div>
@@ -59,11 +59,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="corporate-outline" size="sm">
-              Get Quote
+            <Button variant="corporate-outline" size="sm" asChild>
+              <a href="#contact">Get Quote</a>
             </Button>
-            <Button variant="corporate" size="sm">
-              Contact Us
+            <Button variant="corporate" size="sm" asChild>
+              <a href="#contact">Contact Us</a>
             </Button>
           </div>
 
@@ -95,11 +95,11 @@ const Header = () => {
               </a>
             ))}
             <div className="flex flex-col space-y-2 pt-4">
-              <Button variant="corporate-outline" size="sm">
-                Get Quote
+              <Button variant="corporate-outline" size="sm" asChild>
+                <a href="#contact">Get Quote</a>
               </Button>
-              <Button variant="corporate" size="sm">
-                Contact Us
+              <Button variant="corporate" size="sm" asChild>
+                <a href="#contact">Contact Us</a>
               </Button>
             </div>
           </nav>

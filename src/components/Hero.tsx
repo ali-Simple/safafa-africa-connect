@@ -38,12 +38,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="animate-slide-up flex flex-col sm:flex-row gap-4 mb-12" style={{ animationDelay: "0.4s" }}>
-            <Button variant="corporate" size="xl" className="bg-white text-primary hover:bg-white/90">
-              Request Quote
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="corporate" size="xl" className="bg-white text-primary hover:bg-white/90" asChild>
+              <a href="#contact">
+                Request Quote
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
-            <Button variant="corporate-outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary">
-              Explore Products
+            <Button variant="corporate-outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+              <a href="#products">Explore Products</a>
             </Button>
           </div>
 
