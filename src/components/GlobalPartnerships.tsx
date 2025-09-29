@@ -87,11 +87,11 @@ const GlobalPartnerships = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Global <span className="text-gradient">Partnerships</span>
+            Mill <span className="text-gradient">Papers Supply</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Strategic alliances with the world's leading paper mills ensure consistent 
-            quality, competitive pricing, and reliable supply to our African clients.
+            We supply high-quality papers from leading global mills and maintain 
+            partnerships with other traders to ensure comprehensive market coverage.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ const GlobalPartnerships = () => {
 
         {/* Partners Grid */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12">Our Trusted Mill Partners</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">We Supply These Mill Papers</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {partners.map((partner, index) => (
               <Card key={index} className="card-elegant group hover:shadow-xl transition-all duration-300">
@@ -126,7 +126,7 @@ const GlobalPartnerships = () => {
                       <p className="text-sm text-muted-foreground">{partner.country}</p>
                     </div>
                     <Badge variant="secondary" className="text-xs">
-                      {partner.relationship}
+                      Available
                     </Badge>
                   </div>
                   
@@ -136,7 +136,7 @@ const GlobalPartnerships = () => {
                   
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                    <span className="text-xs text-secondary font-medium">Active Partnership</span>
+                    <span className="text-xs text-secondary font-medium">In Stock</span>
                   </div>
                 </CardContent>
               </Card>
@@ -144,18 +144,18 @@ const GlobalPartnerships = () => {
           </div>
         </div>
 
-        {/* Partnership Benefits */}
+        {/* Supply Benefits */}
         <div className="max-w-4xl mx-auto">
           <Card className="card-elegant hero-gradient text-white">
             <CardContent className="p-12">
               <div className="text-center mb-12">
                 <Globe className="w-16 h-16 mx-auto mb-6 text-white/80" />
                 <h3 className="text-3xl font-bold mb-4">
-                  Why Global Mills Choose SAFAFA IMPEX
+                  Comprehensive Supply Network
                 </h3>
                 <p className="text-xl text-white/90">
-                  Our deep African market knowledge and logistics expertise make us 
-                  the preferred partner for international mills expanding into Africa.
+                  We've established partnerships with other traders as well to ensure 
+                  complete market coverage and competitive pricing for our African clients.
                 </p>
               </div>
 
@@ -164,9 +164,9 @@ const GlobalPartnerships = () => {
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Factory className="w-6 h-6" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Market Access</h4>
+                  <h4 className="text-lg font-semibold mb-2">Direct Mill Supply</h4>
                   <p className="text-white/80 text-sm">
-                    Direct access to established distribution networks across 15+ African countries
+                    Premium quality papers sourced directly from leading global manufacturers
                   </p>
                 </div>
                 
@@ -174,9 +174,9 @@ const GlobalPartnerships = () => {
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Truck className="w-6 h-6" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Logistics Excellence</h4>
+                  <h4 className="text-lg font-semibold mb-2">Trader Network</h4>
                   <p className="text-white/80 text-sm">
-                    Efficient supply chain management from mill gate to client door
+                    Strategic partnerships with traders for expanded inventory and competitive rates
                   </p>
                 </div>
                 
@@ -184,9 +184,9 @@ const GlobalPartnerships = () => {
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="w-6 h-6" />
                   </div>
-                  <h4 className="text-lg font-semibold mb-2">Trust & Reliability</h4>
+                  <h4 className="text-lg font-semibold mb-2">Market Coverage</h4>
                   <p className="text-white/80 text-sm">
-                    Decade-long track record of successful partnerships and timely payments
+                    Complete supply solutions across 15+ African countries through diverse partnerships
                   </p>
                 </div>
               </div>
