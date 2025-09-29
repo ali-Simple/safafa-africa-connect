@@ -87,40 +87,83 @@ const About = () => {
           </Card>
         </div>
 
-        {/* Company Timeline */}
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12">Our Journey</h3>
-          <div className="relative">
-            {/* Timeline line with gradient */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary via-secondary to-primary/20" />
-            
-            {milestones.map((milestone, index) => (
-              <div 
-                key={milestone.year} 
-                className={`relative flex items-center mb-12 animate-fade-in ${
-                  index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                }`}
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Timeline dot with pulse animation */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10 animate-pulse shadow-lg shadow-primary/30" />
-                
-                {/* Content card with enhanced animations */}
-                <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <Card className="card-elegant hover-scale group">
-                    <CardContent className="p-6 transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-primary/5 group-hover:to-secondary/5">
-                      <div className="text-primary font-bold text-2xl mb-2 transition-all duration-300 group-hover:scale-110">
-                        {milestone.year}
-                      </div>
-                      <h4 className="text-xl font-semibold mb-2 transition-colors duration-300 group-hover:text-primary">
+        {/* Company Timeline - Horizontal */}
+        <div className="w-full">
+          <h3 className="text-3xl font-bold text-center mb-16">Our Journey</h3>
+          
+          {/* Horizontal Timeline Container */}
+          <div className="relative overflow-x-auto pb-8">
+            <div className="flex min-w-max px-8 relative">
+              {/* Horizontal Timeline Line */}
+              <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-primary/20 via-primary to-secondary/40 rounded-full shadow-lg" />
+              
+              {milestones.map((milestone, index) => (
+                <div 
+                  key={milestone.year}
+                  className="relative flex-shrink-0 w-80 mr-8 last:mr-0 animate-fade-in group"
+                  style={{ animationDelay: `${index * 0.15}s` }}
+                >
+                  {/* Timeline Dot with Advanced Animation */}
+                  <div className="absolute top-16 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="relative">
+                      <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full border-4 border-background shadow-xl transition-all duration-500 group-hover:scale-125 group-hover:shadow-2xl group-hover:shadow-primary/40" />
+                      <div className="absolute inset-0 w-8 h-8 bg-primary/30 rounded-full animate-ping" />
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full animate-pulse" />
+                    </div>
+                  </div>
+                  
+                  {/* Year Badge */}
+                  <div className="text-center mb-6">
+                    <div className="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full font-bold text-lg shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
+                      {milestone.year}
+                    </div>
+                  </div>
+                  
+                  {/* Content Card */}
+                  <Card className="card-elegant mt-16 transition-all duration-500 transform group-hover:-translate-y-2 group-hover:shadow-2xl group-hover:shadow-primary/10">
+                    <CardContent className="p-6 text-center">
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card border-2 border-border rotate-45" />
+                      <h4 className="text-xl font-bold mb-3 text-gradient group-hover:scale-105 transition-transform duration-300">
                         {milestone.title}
                       </h4>
-                      <p className="text-muted-foreground">{milestone.description}</p>
+                      <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                        {milestone.description}
+                      </p>
+                      
+                      {/* Decorative Elements */}
+                      <div className="mt-4 flex justify-center space-x-1 opacity-30 group-hover:opacity-60 transition-opacity duration-300">
+                        <div className="w-1 h-1 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                        <div className="w-1 h-1 bg-secondary rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                        <div className="w-1 h-1 bg-primary rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                      </div>
                     </CardContent>
                   </Card>
+                  
+                  {/* Progress Indicator */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 delay-100" />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            
+            {/* Gradient Overlays for Scroll Indication */}
+            <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
+            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-background to-transparent pointer-events-none z-10" />
+          </div>
+          
+          {/* Journey Stats */}
+          <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
+            <div className="text-center group">
+              <div className="text-3xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">10+</div>
+              <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">Years of Excellence</div>
+            </div>
+            <div className="text-center group">
+              <div className="text-3xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">15+</div>
+              <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">African Countries</div>
+            </div>
+            <div className="text-center group">
+              <div className="text-3xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">100+</div>
+              <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">Satisfied Clients</div>
+            </div>
           </div>
         </div>
 
